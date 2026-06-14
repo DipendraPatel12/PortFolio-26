@@ -33,7 +33,7 @@ const Hero = () => {
             />
           </span>
         </p>
-        <div className="mt-4" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+        <div className="mt-4 d-none d-md-flex" style={{ justifyContent: 'center', gap: '20px' }}>
           <motion.a
             href="#portfolio"
             className="btn hover-glow"

@@ -69,7 +69,9 @@ const Resume = () => {
                   position: 'relative',
                   overflow: 'hidden',
                   borderRadius: '24px',
-                  cursor: 'default'
+                  cursor: 'default',
+                  transform: 'translateZ(0)',
+                  wordBreak: 'break-word'
                 }}
               >
                 {/* Decorative background glow element */}
