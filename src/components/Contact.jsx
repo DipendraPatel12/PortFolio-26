@@ -19,7 +19,7 @@ const Contact = () => {
           >
             <div className="info" style={{ width: '100%' }}>
               <div className="address" style={{ marginBottom: '30px', display: 'flex', alignItems: 'center' }}>
-                <i className="bi bi-geo-alt hover-glow" style={{ fontSize: '24px', color: 'var(--primary)', width: '60px', height: '60px', background: 'rgba(255, 95, 31, 0.1)', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', marginRight: '20px' }}></i>
+                <i className="bi bi-geo-alt hover-glow" style={{ fontSize: '24px', color: 'var(--primary)', width: '60px', height: '60px', flexShrink: 0, background: 'rgba(255, 95, 31, 0.1)', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', marginRight: '20px' }}></i>
                 <div>
                   <h4 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '5px', color: 'var(--text-main)' }}>Location</h4>
                   <p style={{ marginBottom: 0, fontSize: '1rem', color: 'var(--text-muted)' }}>Bhopal, Madhya Pradesh</p>
@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
 
               <div className="email" style={{ marginBottom: '30px', display: 'flex', alignItems: 'center' }}>
-                <i className="bi bi-envelope hover-glow" style={{ fontSize: '24px', color: 'var(--primary)', width: '60px', height: '60px', background: 'rgba(255, 95, 31, 0.1)', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', marginRight: '20px' }}></i>
+                <i className="bi bi-envelope hover-glow" style={{ fontSize: '24px', color: 'var(--primary)', width: '60px', height: '60px', flexShrink: 0, background: 'rgba(255, 95, 31, 0.1)', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', marginRight: '20px' }}></i>
                 <div>
                   <h4 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '5px', color: 'var(--text-main)' }}>Email</h4>
                   <p style={{ marginBottom: 0, fontSize: '1rem', color: 'var(--text-muted)' }}>dipendrapatel926@gmail.com</p>
@@ -35,7 +35,7 @@ const Contact = () => {
               </div>
 
               <div className="phone" style={{ display: 'flex', alignItems: 'center' }}>
-                <i className="bi bi-phone hover-glow" style={{ fontSize: '24px', color: 'var(--primary)', width: '60px', height: '60px', background: 'rgba(255, 95, 31, 0.1)', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', marginRight: '20px' }}></i>
+                <i className="bi bi-phone hover-glow" style={{ fontSize: '24px', color: 'var(--primary)', width: '60px', height: '60px', flexShrink: 0, background: 'rgba(255, 95, 31, 0.1)', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', marginRight: '20px' }}></i>
                 <div>
                   <h4 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '5px', color: 'var(--text-main)' }}>Call</h4>
                   <p style={{ marginBottom: 0, fontSize: '1rem', color: 'var(--text-muted)' }}>+91 7828071926</p>

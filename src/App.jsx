@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setThemeIndex((prev) => (prev + 1) % themes.length);
-    }, 5 * 60 * 1000); // 5 minutes
+    }, 10 * 1000); // 5 minutes
     return () => clearInterval(interval);
   }, []);
 
