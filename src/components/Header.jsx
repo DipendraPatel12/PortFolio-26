@@ -8,7 +8,7 @@ const Header = () => {
     const handleScroll = () => {
       const position = window.scrollY + 200;
       const sections = ['#hero', '#about', '#resume', '#services', '#portfolio', '#contact'];
-      
+
       sections.forEach((section) => {
         const el = document.querySelector(section);
         if (el) {
@@ -32,7 +32,7 @@ const Header = () => {
   ];
 
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -51,11 +51,11 @@ const Header = () => {
         <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0, gap: '30px' }}>
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a 
-                href={link.href} 
-                style={{ 
-                  color: activeNav === link.href ? '#FF5F1F' : '#ffffff', 
-                  fontSize: '24px', 
+              <a
+                href={link.href}
+                style={{
+                  color: activeNav === link.href ? '#FF5F1F' : '#ffffff',
+                  fontSize: '24px',
                   transition: '0.3s',
                   display: 'flex',
                   alignItems: 'center'
