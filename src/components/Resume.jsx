@@ -58,7 +58,7 @@ const Resume = () => {
         >
           {educationData.map((edu, index) => (
             <motion.div className="col-lg-4 col-md-6" key={index} variants={itemVariants}>
-              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.02} transitionSpeed={2000} style={{ height: '100%' }}>
+              <Tilt tiltEnable={typeof window !== 'undefined' ? window.matchMedia('(hover: hover)').matches : true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.02} transitionSpeed={2000} style={{ height: '100%' }}>
               <div 
                 className="glass-panel hover-glow" 
                 style={{ 

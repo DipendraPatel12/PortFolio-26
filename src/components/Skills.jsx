@@ -39,12 +39,13 @@ const Skills = () => {
               viewport={{ once: true }}
             >
               <Tilt
+                tiltEnable={typeof window !== 'undefined' ? window.matchMedia('(hover: hover)').matches : true}
                 tiltMaxAngleX={20} 
                 tiltMaxAngleY={20} 
                 perspective={800} 
                 transitionSpeed={1000} 
                 scale={1.1} 
-                gyroscope={true}
+                gyroscope={false}
                 glareEnable={true} 
                 glareMaxOpacity={0.4} 
                 glareColor="#ffffff" 

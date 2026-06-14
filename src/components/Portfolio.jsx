@@ -54,13 +54,14 @@ const Portfolio = () => {
               viewport={{ once: true }}
             >
               <Tilt
+                tiltEnable={typeof window !== 'undefined' ? window.matchMedia('(hover: hover)').matches : true}
                 className="h-100"
                 tiltMaxAngleX={15}
                 tiltMaxAngleY={15}
                 perspective={1000}
                 transitionSpeed={1000}
                 scale={1.05}
-                gyroscope={true}
+                gyroscope={false}
                 glareEnable={true}
                 glareMaxOpacity={0.3}
                 glareColor="#ffffff"

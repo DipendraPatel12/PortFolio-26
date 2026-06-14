@@ -44,13 +44,14 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <Tilt
+                tiltEnable={typeof window !== 'undefined' ? window.matchMedia('(hover: hover)').matches : true}
                 className="h-100"
                 tiltMaxAngleX={10}
                 tiltMaxAngleY={10}
                 perspective={1000}
                 transitionSpeed={1000}
                 scale={1.02}
-                gyroscope={true}
+                gyroscope={false}
                 glareEnable={true}
                 glareMaxOpacity={0.2}
                 glareColor="#ffffff"
